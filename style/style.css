@@ -6,6 +6,13 @@
   border: border-box;
 
 }
+body {
+  height: 100%;
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
 .main{
   height: 100%;
   width: 100%;
@@ -55,7 +62,7 @@
   color: rgba(0,0,0,0.8);
 }
 .footp1{
-  background-color:#f7f8f9 ;
+  background-color:#817c7b ;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,7 +70,7 @@
   height: 3rem;
 }
 .footp2{
-  background-color:#333333;
+  background-color:#2a2525;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -87,7 +94,7 @@ ul p{
 }
 
 .footp3{
-  background-color:#333333;
+  background-color:#2a2525;
   padding-bottom: 20px;
   padding-left: 50px;
   padding-right: 50px;

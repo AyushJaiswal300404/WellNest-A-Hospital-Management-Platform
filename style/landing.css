@@ -1,9 +1,9 @@
-
 .content{
   height: 500px;
   width: 100%;
   display: flex;
   position: relative;
+  animation: fadeIn 1s ease-in;
 }
 .content a{
   text-decoration: none;
@@ -13,10 +13,12 @@
   height: 100%;
   width: 50%;
   padding: 5vw 4vw;
+  animation: slideFromLeft 1s ease-out;
 }
 .left h1{
   font-size: 4.2vw;
   line-height: 4.4vw;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 .left h1 span{
   color: lightseagreen;
@@ -28,15 +30,18 @@
   width: 80%;
   margin-top: 3vw ;
   margin-bottom: 4vw;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 .right{
   height: 100%;
   width: 55%;
+  animation: slideFromRight 1s ease-out;
 }
 .logo{
   height: 100%;
   width: 100%;
   object-fit: contain;
+  animation: fadeIn 1s ease-out 0.6s both;
 }
 .btn{
   font-size: 1.5vw;
@@ -45,7 +50,7 @@
   border: none;
   border-radius: 5px;
   font-weight: 700;
-  background-color: #f3dd8f ;
+  background-color:rgb(233, 182, 182);
 }
 
 .department{
@@ -73,7 +78,7 @@
   margin-right: 1rem;
 }
 .box-content h2{
-  color:  #FFF0BB;
+  color:  #fff;
   text-align: center;
 }
 
@@ -103,10 +108,44 @@
   }
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+@keyframes slideFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
-
-
-
-
+@keyframes slideFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
