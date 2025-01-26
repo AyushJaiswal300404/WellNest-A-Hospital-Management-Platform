@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Telemedicine - Hospital Management</title>
+    <link rel="stylesheet" href="style/telemedicine.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!--  header    -->
+<div class="main">
+    <div class="nav">
+        <h2><a href="index.html">WellNest </a></h2>
+        <div class="navp">
+            <h4><a href="../connect.html">Connect with doctor</a></h4>
+            <h4><a href="../appointment.html">Book Appointment</a></h4>
+            <h4><a href="../telemedicine.html">Order Medicines</a></h4>
+            <h4><a href="../terms.html"> Privacy</a> </h4>
+            <i class="ri-menu-line"></i>
+        </div>
+    </div>
+  </div> 
+  <!--content   -->
+
+    <section id="track">
+        <div class="container">
+            <!-- Medicines Section -->
+            <div class="section-header">
+                <h2>Medicines Inventory</h2>
+            </div>
+
+            <table class="inventory-table">
+                <thead>
+                    <tr>
+                        <th>Medicine Name</th>
+                        <th>Category</th>
+                        <th>Quantity</th>
+                        <th>Dosage</th>
+                        <th>Expiry Date</th>
+                        <th>Price (₹)</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paracetamol</td>
+                        <td>Pain Relief</td>
+                        <td>100</td>
+                        <td>500mg</td>
+                        <td>2025-12-31</td>
+                        <td>100</td>
+                        <td><button class="add-to-cart" data-medicine="Paracetamol" data-price="100">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>Amoxicillin</td>
+                        <td>Antibiotic</td>
+                        <td>50</td>
+                        <td>250mg</td>
+                        <td>2025-09-15</td>
+                        <td>70</td>
+                        <td><button class="add-to-cart" data-medicine="Amoxicillin" data-price="70">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>Ibuprofen</td>
+                        <td>Pain Relief</td>
+                        <td>120</td>
+                        <td>200mg</td>
+                        <td>2026-05-01</td>
+                        <td>150</td>
+                        <td><button class="add-to-cart" data-medicine="Ibuprofen" data-price="150">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>Metformin</td>
+                        <td>Diabetes</td>
+                        <td>80</td>
+                        <td>500mg</td>
+                        <td>2025-11-30</td>
+                        <td>200</td>
+                        <td><button class="add-to-cart" data-medicine="Metformin" data-price="200">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>Omeprazole</td>
+                        <td>Antacid</td>
+                        <td>90</td>
+                        <td>20mg</td>
+                        <td>2025-08-15</td>
+                        <td>180</td>
+                        <td><button class="add-to-cart" data-medicine="Omeprazole" data-price="180">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>Cetirizine</td>
+                        <td>Antiallergic</td>
+                        <td>150</td>
+                        <td>10mg</td>
+                        <td>2026-03-20</td>
+                        <td>120</td>
+                        <td><button class="add-to-cart" data-medicine="Cetirizine" data-price="120">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>Aspirin</td>
+                        <td>Pain Relief</td>
+                        <td>200</td>
+                        <td>75mg</td>
+                        <td>2026-01-15</td>
+                        <td>90</td>
+                        <td><button class="add-to-cart" data-medicine="Aspirin" data-price="90">Add to Cart</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Equipment Section -->
+            <div class="section-header">
+                <h2>Medical Equipment</h2>
+                
+            </div>
+
+            <table class="inventory-table">
+                <thead>
+                    <tr>
+                        <th>Equipment Name</th>
+                        <th>Category</th>
+                        <th>Quantity</th>
+                        <th>Status</th>
+                        <th>Price (₹)</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Stethoscope</td>
+                        <td>Diagnostic</td>
+                        <td>10</td>
+                        <td><span class="status available">Available</span></td>
+                        <td>1500</td>
+                        <td><button class="add-to-cart" data-equipment="Stethoscope" data-price="1500">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>Oximeter</td>
+                        <td>Monitoring</td>
+                        <td>5</td>
+                        <td><span class="status out-of-stock">Out of Stock</span></td>
+                        <td>2000</td>
+                        <td><button class="add-to-cart" data-equipment="Oximeter" data-price="2000" disabled>Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>Blood Pressure Monitor</td>
+                        <td>Monitoring</td>
+                        <td>8</td>
+                        <td><span class="status available">Available</span></td>
+                        <td>3500</td>
+                        <td><button class="add-to-cart" data-equipment="BP Monitor" data-price="3500">Add to Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>Thermometer</td>
+                        <td>Diagnostic</td>
+                        <td>15</td>
+                        <td><span class="status available">Available</span></td>
+                        <td>500</td>
+                        <td><button class="add-to-cart" data-equipment="Thermometer" data-price="500">Add to Cart</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+   <!--   footer     -->
+<div class="footer">
+    <div class="footp1 foot-18">
+      <a href="telemedicine.html">   Back to Top</a>
+    </div>
+  
+    <div class="footp2">
+      <ul>
+        <p>Get to Know Us</p> 
+        <a href="explore.html">About Us</a>
+        <a>Careers</a>
+        <a>Press Releases</a>
+        <a>Technologies</a>
+      </ul>
+      <ul>
+          <p>Connect with Us</p> 
+          <a>Facebook</a>
+          <a>Twitter</a>
+          <a>Instagram</a>
+      </ul>
+      <ul>
+        <p>Top Departments</p> 
+        <a>Primary First Aid</a>
+        <a>Cardiovascular Care</a>
+        <a>Physiotherapy</a>
+        <a>Dermatology</a>
+        <a>Neurology</a>
+      </ul>
+      <ul>
+        <p>Do you have any recommendation?</p> 
+        <a>List a Hospital</a>
+        <a>Become our EHR partner</a>
+        <a>Feedback</a>
+        <a>Contribute</a>
+        <a>Donations</a>
+        <a>Learn More about WellNest</a>
+        
+      </ul>
+    </div>
+   
+    <div class="footp3">
+      <p>The content provided here and elsewhere on the WellNest site is provided for general informational purposes only.It is not intended
+        as, WellNest does not provide medical advice,diagnosis or treatment.Always contact your healthcare provider directly with any questions
+        you may have regarding your health or specific medical advice.
+      </p>
+    </div>
+  
+    <div class="footp4">
+      <div class="copyright">
+        © 2024, WellNest.com, Inc.
+      </div>
+      <div class="pages">
+        <a>Conditions of use</a>
+        <a>Privacy</a>
+        <a>Terms</a>
+      </div>
+    </div>
+</body>
+</html>
