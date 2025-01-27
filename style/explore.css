@@ -8,7 +8,7 @@ html, body {
     height: 100%;
     background-color: #f8f9fa;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #000; /* Changed to black */
+    color: #000;
     line-height: 1.6;
 }
 
@@ -26,7 +26,7 @@ h1 {
     text-align: center;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
     position: relative;
-    color: #000; /* Changed to black */
+    color: #000; 
 }
 
 h1::after {
@@ -34,7 +34,7 @@ h1::after {
     display: block;
     width: 150px;
     height: 4px;
-    background: #03989E; /* Keep brand color only for underline */
+    background: #03989E; 
     margin: 1rem auto;
     border-radius: 2px;
 }
@@ -78,7 +78,7 @@ h3 {
 .section ul, 
 .section ol,
 .section li {
-    color: #000;  /* Changed to black */
+    color: #000; 
 }
 
 .section:hover {
@@ -97,29 +97,7 @@ h3 {
     }
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .explore {
-        padding: 2rem 1rem;
-    }
 
-    h1 {
-        font-size: 2.5rem;
-        color: #03989E;  /* Keep heading color */
-    }
-
-    h3 {
-        font-size: 1.3rem;
-    }
-
-    .section h3 {
-        font-size: 1.5rem;
-    }
-
-    .section {
-        padding: 1.5rem;
-    }
-}
 
 /* List Styling */
 ul, ol {

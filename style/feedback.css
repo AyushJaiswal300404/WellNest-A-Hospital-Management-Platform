@@ -86,21 +86,3 @@ textarea {
 
 
 
-/* For mobile*/
-@media (max-width:600px){
-  .nav{
-      padding: 0 3vw;
-      height: 60px;
-  }
-  .nav h2{
-    font-size: 6vw;
-  }
-  .nav h4{
-    display: none;
-  }
-  .nav i{
-    display: block;
-    font-size: 5vw;
-  }
-
-  }
